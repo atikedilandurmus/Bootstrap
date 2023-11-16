@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Dizi Örneði</title>
+  
+</head>
+<body>
+    <span id="yazi"></span>
+    <script>
+        var dizi = ["Ocak", "Þubat", "Mart"];
+        dizi.push("Nisan"); // diziye item ekleme
+
+        var uzunluk = dizi.length; // dizi uzunluðu
+
+
+        var list = "<ul>";
+
+        dizi.forEach(liste_yazdir);
+
+        list += "</ul>";
+
+        document.getElementById("yazi").innerHTML = list;
+
+        function liste_yazdir(eleman) {
+            list += "<li>" + eleman + "</li>";
+        }
+
+    </script>
+</body>
+</html>
